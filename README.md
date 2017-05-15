@@ -1,7 +1,12 @@
 # debounce-throttle
 
+debounce-throttle 是利用[lodash-cli](https://lodash.com/custom-builds)定制的只包含 debounce 和 throttle 函数的库。
+
 ## 原因
-只想简单使用 lodash 的 debounce 和 throttle 函数，但是 lodash 库显得太大了，分别下载 lodash.debounce 和 lodash.throttle 又有代码冗余，因为 lodash.throttle 内包含 lodash.debounce 的代码。所以利用[lodash-cli](https://lodash.com/custom-builds)定制了 debounce 和 throttle 函数。
+在使用 lodash 库的节流函数时，感觉有 2 个问题不太友好，所以定制了只包含 debounce 和 throttle 函数的库，方便自己使用。
+
+- 文件大小问题：无论是下载 lodash 还是分别下载 lodash.debounce, lodash.throttle 都有代码冗余。因为 lodash.throttle 是用 lodash.debounce 实现的，分别下载 lodash.debounce, lodash.throttle 相当于下载了 2 份代码！
+- 模块化问题：lodash.debounce 和 lodash.throttle 只支持CMD。
 
 ## 引用
 该定制为 UMD 的，所以支持多种引用方式

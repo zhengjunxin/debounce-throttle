@@ -1,6 +1,6 @@
 {
   "name": "debounce-throttle",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "custom build debounce throttle by lodash cli",
   "main": "index.min.js",
   "scripts": {
