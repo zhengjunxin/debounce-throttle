@@ -1,0 +1,28 @@
+{
+  "name": "debounce-throttle",
+  "version": "1.0.0",
+  "description": "custom build debounce throttle by lodash cli",
+  "main": "index.min.js",
+  "scripts": {
+    "build": "lodash exports=umd include=debounce,throttle -o index.js",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoeZheng2015/debounce-throttle.git"
+  },
+  "keywords": [
+    "lodash",
+    "debounce",
+    "throttle"
+  ],
+  "author": "joezheng",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JoeZheng2015/debounce-throttle/issues"
+  },
+  "homepage": "https://github.com/JoeZheng2015/debounce-throttle#readme",
+  "devDependencies": {
+    "lodash-cli": "^4.17.4"
+  }
+}
