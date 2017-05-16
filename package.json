@@ -1,7 +1,7 @@
 {
   "name": "debounce-throttle",
-  "version": "1.0.1",
-  "description": "custom build debounce throttle by lodash cli",
+  "version": "1.0.4",
+  "description": "lodash debounce and throttle function built by lodash-cli to support UMD",
   "main": "index.min.js",
   "scripts": {
     "build": "lodash exports=umd include=debounce,throttle -o index.js",
